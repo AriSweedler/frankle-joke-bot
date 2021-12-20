@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Set environment variables
+export XXX=123
+
+# Invoke the python script
+readonly parent_dir="$(cd "$(dirname "$BASH_SOURCE")" && pwd -P)"
+python3 "$parent_dir/get-tweets.py"
